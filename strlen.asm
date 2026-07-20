@@ -33,10 +33,8 @@ strlen:
 	.iteration:
     mov r9b, [rdi] ;# r9b holds the current char
 
-    ;# if (c == '\0' || char == '\n') {return}
+    ;# if (c == '\0') {return}
 		cmp r9b, 0x00
-		jz .lenret
-		cmp r9b, 0x0a
 		jz .lenret
     
     ;# charptr++; i++
