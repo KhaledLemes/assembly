@@ -44,7 +44,7 @@ strlen:
 
 	.lenret:
   ;# Puts the len to [len] addres
-	mov rax, r8b
+	mov al, r8b
 	ret
 
 read:
